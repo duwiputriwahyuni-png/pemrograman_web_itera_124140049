@@ -40,15 +40,15 @@ total belanja, diskon, total pembayaran, dan kembalian.
 
 ### 1. Tampilan Form Input
 
-![Tampilan Form](c:\Users\iqbal\OneDrive\Pictures\Screenshots\Screenshot -Form.png)
+![Tampilan Form](Screenshot%20-Form.png)
 
 ### 2. Validasi Input
 
-![Validasi Input](c:\Users\iqbal\OneDrive\Pictures\Screenshots\Screenshot-validasi.png)
+![Validasi Input](Screenshot-validasi.png)
 
 ### 3. Hasil Perhitungan
 
-![Hasil Perhitungan](c:\Users\iqbal\OneDrive\Pictures\Screenshots\Screenshot-hasil.png)
+![Hasil Perhitungan](Screenshot-hasil.png)
 
 ## Penjelasan Teknis
 
