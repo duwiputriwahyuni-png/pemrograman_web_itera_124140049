@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Dashboard | Duwi Putri Wahyuni</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1 id="greeting">Halo!</h1>
+    <p id="clock" class="muted"></p>
+  </div>
+  <button id="themeBtn" class="ghost" aria-label="Ganti tema">Mode gelap</button>
+</header>
+
+<main class="grid">
+  <section class="card profile" aria-labelledby="h-profile">
+    <h2 id="h-profile">Profil</h2>
+    <div id="profile"></div>
+  </section>
+
+  <section class="card stats" aria-labelledby="h-stats">
+    <h2 id="h-stats">Ringkasan tugas</h2>
+    <div id="stats" class="statrow"></div>
+    <div class="bar" aria-hidden="true"><span id="barFill"></span></div>
+  </section>
+
+  <section class="card tasks" aria-labelledby="h-tasks">
+    <h2 id="h-tasks">Daftar tugas</h2>
+    <div class="addrow">
+      <input id="taskInput" type="text" placeholder="Tulis tugas baru" aria-label="Tugas baru">
+      <select id="prioInput" aria-label="Prioritas">
+        <option value="rendah">Rendah</option>
+        <option value="sedang" selected>Sedang</option>
+        <option value="tinggi">Tinggi</option>
+      </select>
+      <button id="addBtn">Tambah</button>
+    </div>
+    <div class="filters" role="group" aria-label="Filter tugas">
+      <button data-filter="semua" class="chip active">Semua</button>
+      <button data-filter="aktif" class="chip">Aktif</button>
+      <button data-filter="selesai" class="chip">Selesai</button>
+    </div>
+    <ul id="taskList"></ul>
+  </section>
+
+  <section class="card skills" aria-labelledby="h-skills">
+    <h2 id="h-skills">Skill</h2>
+    <ul id="skillList" class="tags"></ul>
+    <form id="skillForm" class="addrow" onsubmit="return false">
+      <input id="skillInput" type="text" placeholder="Tambah skill" aria-label="Skill baru">
+      <button id="skillBtn">Tambah</button>
+    </form>
+  </section>
+
+  <section class="card quote" aria-labelledby="h-quote">
+    <h2 id="h-quote">Kutipan hari ini</h2>
+    <blockquote id="quote">Memuat...</blockquote>
+    <button id="quoteBtn" class="ghost">Kutipan lain</button>
+  </section>
+</main>
+
+<footer class="muted">Praktikum PAW Pertemuan 2 · ITERA · Duwi Putri Wahyuni (124140049)</footer>
+<script src="script.js"></script>
+</body>
+</html>
