@@ -1,0 +1,4 @@
+screenshots
+- c:\Users\iqbal\OneDrive\Pictures\Screenshots\Screenshot 2026-10-25 021258.png (halaman Beranda)
+- c:\Users\iqbal\OneDrive\Pictures\Screenshots\Screenshot 2026-10-25 021334.png (halaman Statistik)
+- c:\Users\iqbal\OneDrive\Pictures\Screenshots\Screenshot 2026-10-25 022555.png (hasil `npm run test:run` di terminal)

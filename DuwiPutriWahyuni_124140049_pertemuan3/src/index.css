@@ -1,0 +1,92 @@
+:root {
+  --paper: #edf0ee;
+  --surface: #ffffff;
+  --ink: #14262b;
+  --muted: #55686c;
+  --line: #c5d0ce;
+  --teal: #1f5f6b;
+  --teal-dark: #164850;
+  --amber: #b97a10;
+  --plum: #7a3e6d;
+  --danger: #b3261e;
+  --radius: 6px;
+  --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 { font-size: 1.9rem; }
+h2 { font-size: 1.35rem; }
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid #e0a526;
+  outline-offset: 2px;
+}
+
+.app__main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+}
+
+/* Tombol bersama */
+.btn {
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  background: transparent;
+}
+.btn--primary { background: var(--teal); color: #fff; }
+.btn--primary:hover { background: var(--teal-dark); }
+.btn--ghost { border-color: var(--line); background: var(--surface); }
+.btn--ghost:hover { border-color: var(--teal); color: var(--teal); }
+.btn--danger { border-color: var(--line); background: var(--surface); color: var(--danger); }
+.btn--danger:hover { border-color: var(--danger); }
+
+/* Label status bersama (dipakai daftar buku) */
+.status-badge {
+  display: inline-block;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0.1rem 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.status-badge--milik { color: var(--teal); }
+.status-badge--baca { color: #8a5a00; }
+.status-badge--beli { color: var(--plum); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
