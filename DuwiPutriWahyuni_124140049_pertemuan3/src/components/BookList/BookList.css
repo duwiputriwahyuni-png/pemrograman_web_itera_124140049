@@ -1,0 +1,31 @@
+.book-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+
+/* Setiap buku punya "punggung buku" berwarna sesuai statusnya */
+.book-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 10px solid var(--teal);
+  border-radius: 2px var(--radius) var(--radius) 2px;
+  padding: 0.8rem 1rem;
+}
+.book-item[data-status='baca'] { border-left-color: var(--amber); }
+.book-item[data-status='beli'] { border-left-color: var(--plum); }
+.book-item__title { font-size: 1.1rem; }
+.book-item__author { margin: 0.1rem 0 0; color: var(--muted); }
+.book-item__actions { display: flex; gap: 0.4rem; }
+.book-list__empty {
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 680px) {
+  .book-item { grid-template-columns: 1fr; gap: 0.6rem; }
+  .book-item__actions { justify-self: start; }
+}

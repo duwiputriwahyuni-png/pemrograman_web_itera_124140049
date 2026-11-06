@@ -1,0 +1,11 @@
+.stats__summary { display: flex; gap: 2.5rem; margin: 1.5rem 0; }
+.stats__summary dt { color: var(--muted); font-size: 0.9rem; }
+.stats__summary dd { margin: 0; font-family: var(--font-display); font-size: 2.6rem; line-height: 1.1; }
+.stats__bars { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; max-width: 560px; }
+.stats__bar-label { display: flex; justify-content: space-between; margin-bottom: 0.3rem; }
+.stats__track { height: 14px; background: var(--line); border-radius: 2px; overflow: hidden; }
+.stats__fill { height: 100%; transition: width 0.3s ease; }
+.stats__fill--milik { background: var(--teal); }
+.stats__fill--baca { background: var(--amber); }
+.stats__fill--beli { background: var(--plum); }
+.stats__empty { color: var(--muted); }
