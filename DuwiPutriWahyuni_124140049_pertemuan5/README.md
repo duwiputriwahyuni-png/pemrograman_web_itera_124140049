@@ -1,9 +1,9 @@
 # Tugas Pertemuan 5 - Sistem Manajemen Perpustakaan (Python OOP)
 
 ## Identitas Mahasiswa
-- **Nama Lengkap** : [ISI NAMA LENGKAP]
-- **NIM**          : [ISI NIM]
-- **Kelas Praktikum** : [RA / RB]
+- **Nama Lengkap** : Duwi Putri Wahyuni
+- **NIM**          : 124140049
+- **Kelas Praktikum** : RA
 
 ## Deskripsi Program
 Program ini adalah sistem perpustakaan sederhana. Alurnya: `main.py` membuat objek `Library`, menambahkan beberapa `Book` dan `Magazine`, menampilkan katalog tersedia, mencari item (berdasarkan judul/ID), lalu seorang `Member` meminjam dan mengembalikan item (dengan perhitungan denda).

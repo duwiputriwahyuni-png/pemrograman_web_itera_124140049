@@ -1,0 +1,43 @@
+--- 1. Menambahkan Item ---
+Item ditambahkan: Pemrograman Python (Buku)
+Item ditambahkan: Basis Data Dasar (Buku)
+Item ditambahkan: Tech Monthly (Majalah)
+Item ditambahkan: Sains Populer (Majalah)
+Gagal: ID 'B001' sudah terdaftar.
+
+--- 2. Katalog Tersedia ---
+
+=== Katalog Tersedia - Perpustakaan ITERA (4 item) ===
+ - Buku | ID: B001 | Judul: Pemrograman Python | Penulis: Budi Santoso | Halaman: 320
+ - Buku | ID: B002 | Judul: Basis Data Dasar | Penulis: Siti Rahma | Halaman: 280
+ - Majalah | ID: M001 | Judul: Tech Monthly | Penerbit: Gramedia | Edisi: Nov 2026
+ - Majalah | ID: M002 | Judul: Sains Populer | Penerbit: Kompas | Edisi: Okt 2026
+
+--- 3. Pencarian ---
+Cari judul 'python': ['Pemrograman Python']
+Cari ID 'M001'     : Majalah | ID: M001 | Judul: Tech Monthly | Penerbit: Gramedia | Edisi: Nov 2026
+Cari ID 'X999'     : None
+
+--- 4. Peminjaman & Status Ketersediaan ---
+Sukses: Ahmad Fadhil meminjam 'Pemrograman Python'.
+Sukses: Ahmad Fadhil meminjam 'Tech Monthly'.
+Gagal: 'Pemrograman Python' sedang dipinjam.
+Status B001 dipinjam? True
+
+=== Katalog Tersedia - Perpustakaan ITERA (2 item) ===
+ - Buku | ID: B002 | Judul: Basis Data Dasar | Penulis: Siti Rahma | Halaman: 280
+ - Majalah | ID: M002 | Judul: Sains Populer | Penerbit: Kompas | Edisi: Okt 2026
+
+--- 5. Pengembalian & Denda (Polymorphism) ---
+Sukses: Ahmad Fadhil mengembalikan 'Pemrograman Python'. Denda: Rp 3,000
+Sukses: Ahmad Fadhil mengembalikan 'Tech Monthly'. Denda: Rp 1,500
+
+=== Seluruh Koleksi - Perpustakaan ITERA (4 item) ===
+ - [B001] Pemrograman Python (Buku) - Tersedia
+ - [B002] Basis Data Dasar (Buku) - Tersedia
+ - [M001] Tech Monthly (Majalah) - Tersedia
+ - [M002] Sains Populer (Majalah) - Tersedia
+
+--- 6. Bukti Encapsulation & Abstract Class ---
+is_dipinjam bersifat read-only (AttributeError).
+LibraryItem tidak bisa diinstansiasi: Can't instantiate abstract class LibraryItem without an implementation for abstract methods 'get_detail', 'get_tipe', 'hitung_denda'
