@@ -1,0 +1,35 @@
+### MATAKULIAH - READ ALL
+GET http://localhost:6543/api/matakuliah
+
+### READ ONE
+GET http://localhost:6543/api/matakuliah/1
+
+### READ ONE - 404
+GET http://localhost:6543/api/matakuliah/999
+
+### CREATE
+POST http://localhost:6543/api/matakuliah
+Content-Type: application/json
+
+{"kode_mk": "IF4010", "nama_mk": "Kecerdasan Buatan", "sks": 3, "semester": 7}
+
+### CREATE - 400 (field tidak lengkap)
+POST http://localhost:6543/api/matakuliah
+Content-Type: application/json
+
+{"nama_mk": "Tanpa Kode", "sks": 3, "semester": 3}
+
+### CREATE - 400 (sks nol)
+POST http://localhost:6543/api/matakuliah
+Content-Type: application/json
+
+{"kode_mk": "IF9999", "nama_mk": "Uji SKS", "sks": 0, "semester": 3}
+
+### UPDATE
+PUT http://localhost:6543/api/matakuliah/1
+Content-Type: application/json
+
+{"nama_mk": "Pemrograman Web Lanjut", "sks": 4}
+
+### DELETE
+DELETE http://localhost:6543/api/matakuliah/5
